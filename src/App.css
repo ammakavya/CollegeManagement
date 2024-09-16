@@ -1,7 +1,13 @@
 .App {
   text-align: center;
+  background-color:black;
 }
-
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,7 +18,14 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.Sidebar {
+  position: fixed;
+  top: 64px; /* Adjust if Navbar height changes */
+  left: 0;
+  width: 240px;
+  height: calc(100vh - 64px); /* Adjust if Navbar height changes */
+  z-index: 5; /* Ensure Sidebar is below Navbar */
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +48,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App{
+  background-color:black;
 }
